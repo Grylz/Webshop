@@ -1,0 +1,32 @@
+.body{
+    background-image: url(https://wallpaperset.com/w/full/a/0/c/534117.jpg);
+}
+
+.cart {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.cart h2 {
+    text-align: center;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatek Bolt Teso</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="kosar.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Lego Szettek</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="toy_shop.html">Főoldal</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            <li><a href="javascript:void(0);" onclick="showCart()">Kosár</a></li>
+
+        </ul>
+    </nav>
+
+    
+    <main class="product-grid">
+        <section class="product">
+            <img class="star"src="https://www.lego.com/cdn/cs/set/assets/blt892f38a4fd55edeb/75257.jpg" alt="Toy 1">
+            <h2>Lego Star Wars</h2>
+            <p>Ár: 339990ft</p>
+            <button onclick="addToCart('Lego Star Wars', 339990)">Kosárba</button>
+        </section>
+
+        <section class="product">
+            <img class="tarsas" src="https://i.ytimg.com/vi/6b4V7wcenL0/maxresdefault.jpg" alt="Barbie lego">
+            <h2>Lego Barbie</h2>
+            <p>Ár: 51200ft</p>
+            <button onclick="addToCart('Lego Barbie', 51200)">Kosárba</button>
+        </section>
+
+        <section class="product">
+            <img class="kartya" src="data:image/jpeg;base64,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" alt="Kártyajáték">
+            <h2>Lego Kocsi</h2>
+            <p>Ár: 15490ft</p>
+            <button onclick="addToCart('Lego Kocsi', 15490)">Kosárba</button>
+        </section>
+        
+        <section class="product">
+            <img class="tarsas" src="https://kocka.hu/images/Products/30588/Large/lego-30588-lego-city-jatszoter-gyerekeknek-001.jpg" alt="Gamekonzolok">
+            <h2>Gyerek Játék</h2>
+            <p>Ár: 4000ft</p>
+            <button onclick="addToCart('Gyerek Játék', 4000)">Kosárba</button>
+        </section>
+
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Lego</p>
+    </footer>
+    <div  id="cart" style="display: none; color: black;">
+        <h2>Kosarad</h2>
+        <ul id="cart-items">
+        </ul>
+        <p>Összesen: HUF <span id="cart-total">0.00</span></p>
+    </div>
+    
+    <script src="kosar.js"></script>
+</body>
+</html>

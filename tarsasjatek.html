@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatek Bolt Teso</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="kosar.css">
+    
+</head>
+<body>
+    <script href="kosar.js"></script>
+    <header>
+        <h1>Társasjátékok</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="toy_shop.html">Főoldal</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            <li><a href="javascript:void(0);" onclick="showCart()">Kosár</a></li>
+
+        </ul>
+    </nav>
+
+    <main class="product-grid">
+        <section class="product">
+            <img class="monop" src="https://p1.akcdn.net/full/1042730796.hasbro-monopoly-utazas-vilag-koruli-ut-f4007.jpg" alt="Monopoly">
+            <h2>Monopoly</h2>
+            <p>Ár: 21490 ft</p>
+            <button onclick="addToCart('Monopoly', 21490)">Kosárba</button>
+        </section>
+
+        <section class="product">
+            <img class="Activity" src="https://secure.ce-tescoassets.com/assets/HU/329/9001890737329/ShotType1_540x540.jpg" alt="Társasjáték">
+            <h2>Activity</h2>
+            <p>Ár: 5990ft </p>
+            <button onclick="addToCart('Activity', 5990)">Kosárba</button>
+        </section>
+
+        <section class="product">
+            <img class="gazdal" src="https://i.pepita.hu/images/product/302812/gazdalkodj-okosan-tarsasjatek-euros-valtozat_31025544_1200x630.jpg" alt="Gazdalkodjokosan">
+            <h2>Gazdalkodjokosan</h2>
+            <p>Ár: 4190ft </p>
+            <button onclick="addToCart('Gazdálkodj okosan', 4190)">Kosárba</button>
+        </section>
+        
+        <section class="product">
+            <img class="honfog" src="https://phantomgames.hu/wp-content/uploads/2022/11/Honfoglalo-tarsasjatek-510x510.jpg" alt="Honfoglaló">
+            <h2>Honfoglaló</h2>
+            <p>Ár: 10990ft </p>
+            <button onclick="addToCart('Honfoglaló', 10990)">Kosárba</button>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Toy Shop</p>
+    </footer>
+    <div  id="cart" style="display: none; color: black;">
+        <h2>Kosarad</h2>
+        <ul id="cart-items">
+        </ul>
+        <p>Összesen: HUF <span id="cart-total">0.00</span></p>
+    </div>
+    
+    <script src="kosar.js"></script>
+</body>
+</html>

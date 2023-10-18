@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+  background-image: url(https://wallpaperset.com/w/full/a/0/c/534117.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 0px;
+  transition: 0.5s;
+ 
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+ 
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  float: left;
+  -ms-transform: translate(50%, 50%);
+    transform: translate(20%, 55%);
+
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  position: absolute;
+}
+
+@media screen and (max-height: 40px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.bakk{
+  font-family: 'Times New Roman', Times, serif;
+  color: #f1f1f1;
+  text-align: center;
+  font-weight: 900;
+}
+
+.kepp img{
+  width: 250px;
+  height: 250px;
+  margin-top: 50px;
+  margin-left: 90px;
+}
+
+.koz p{
+color: #f1f1f1;
+font-size: large;
+font-family: 'Times New Roman', Times, serif;
+text-align: center;
+margin-top: -200px;
+}
+
+.easteregg{
+  margin-top: 645px;
+  margin-left: 1905px;
+  width:10px ;
+  height:10px ;
+}
